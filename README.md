@@ -30,6 +30,13 @@ Various periods between August 2020 and August 2021 were spent on this remastere
 
 99% of the code is written using BBC Basic, with a small amount of assembly language to enable faster rendering of the player character. Because of the lack of room, the 'DROID2' game code is quite hard to read. I'm hoping to create a more annotated version which can then be compressed as part of the build process.
 
+## Description of code files
+
+* `DROID0.bas` - displays the loading screen and instructions. Also, core graphics and envelope sounds are initialised. Music data is also saved to a key area of memory.
+* `DROID1.bas` - if `PAGE` is not at &1100, the program reruns to prevent data corruption, while the file assembles some code for printing of the player character. Additionally, the map, graphics and assigned colours are also committed to specific areas of memory (&2764, &27DD and &950 respectively). `HIMEM` is then set to just below the location of the map data, before `DROID2.bas` is run.
+* `DROID2.bas` - the main game code. The code is relocated in memory to run at &E00, before switching to MODE 2, and again, ensuring `HIMEM` remains at &2764, to prevent level data corruption. When the game ends, `*DISC` is set, which raises the `PAGE` back to &1900, before your score is assigned to memory address &900, and `DROID3.bas` is run.
+* `DROID3.bas` - this issues some text based on your percentage score, retrieved from memory address &900. When you play again, `PAGE` is set back to &1100, before running `DROID2.bas` to run the game.
+
 ## How to build from source
 
 Although the disc image is included here, there are files included to help you build your own copy of the game. You will require the following:
