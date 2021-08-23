@@ -34,14 +34,14 @@ Various periods between August 2020 and August 2021 were spent on this remastere
 
 Although the disc image is included here, there are files included to help you build your own copy of the game. You will require the following:
 
-* (Beebasm)[https://github.com/stardot/beebasm]
+* [Beebasm](https://github.com/stardot/beebasm)
 
 On more recent versions of Mac OS, Beebasm must be rebuilt from source, in order to run in the 64-bit environment. 
 
 This repo includes the build process employed on my Apple iMac, which not only includes a build of BeebAsm, but the following tools/software:
 
-* b2 emulator
-* Visual Studio Code (using the Beeb VSC extension, which offers some BASIC syntax highlighting)
+* [b2 emulator](https://github.com/tom-seddon/b2)
+* [Visual Studio Code](https://github.com/microsoft/vscode) (using the [Beeb VSC extension](https://github.com/simondotm/beeb-vsc), which offers some BASIC syntax highlighting)
 
 VS Code's Tasks feature is employed to good effect here, by allowing a 'build' and 'test' task, the former runs the shell script `build.sh` which kicks beebasm, containing the following script:
 
