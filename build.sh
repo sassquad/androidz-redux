@@ -1,0 +1,1 @@
+beebasm -i Androidz-Redux.asm -do AndroidzRedux.ssd -opt 3 -title Androidz
