@@ -92,7 +92,7 @@ The remastering process started in August 2020, eventually resulting in my start
 
 The following people within the Stardot community were very helpful in my endeavours to get this version of the game to fruition.
 
-* (0xCODE)[https://github.com/0xC0DE6502] (for helping with some annoying bugs which I couldn't seem to work out, thank you!)
+* [0xCODE](https://github.com/0xC0DE6502) (for helping with some annoying bugs which I couldn't seem to work out, thank you!)
 * ChrisB and lurkio (for assistance in level and data compaction, plus input on which areas of memory to use for data storage)
 * VectorEyes, tom_seddon and julie_m (for their input in creation of the build files and integration with the b2 emulator)
 * tricky (for some pointers on bootfile creation)
