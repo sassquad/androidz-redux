@@ -5,9 +5,9 @@ Androidz is a 20 level arcade game, set in the near future. You work as a police
 
 Full instructions are provided within the game.
 
-![Image of Androidz Redux](androidz-redux1.png)
-![Image of Androidz Redux](androidz-redux2.png)
-![Image of Androidz Redux](androidz-redux3.png)
+![Image of Androidz Redux](https://github.com/sassquad/androidz-redux/blob/main/androidz-redux1.png)
+![Image of Androidz Redux](https://github.com/sassquad/androidz-redux/blob/main/androidz-redux2.png)
+![Image of Androidz Redux](https://github.com/sassquad/androidz-redux/blob/main/androidz-redux3.png)
 
 ## What's changed from the original?
 
