@@ -14,11 +14,27 @@
         },
     "tasks": [
         {
-            "label": "Androidz-Redux.ssd",
+            "label": "AndroidzRedux.ssd",
             "type": "shell",
             "command": "make",
             "osx": {
                 "command": ". ./build.sh"
+            },
+            // change the command argument to match where you have placed
+            // your emulator executable.
+            // amend the args argument to match that of your emulator settings.
+            "windows": {
+                "command": "C:/Code/beebasm/beebasm.exe",
+                "args": [
+                    "-i",
+                    "Androidz-Redux.asm",
+                    "-do",
+                    "AndroidzRedux.ssd",
+                    "-opt",
+                    "3",
+                    "-title",
+                    "Androidz"
+                ]
             },
             "group": {
                 "kind": "build",
@@ -57,11 +73,14 @@
             "osx": {
                 "command": ". ./testinb2.sh"
             },
+            // change the command argument to match where you have placed
+            // your emulator executable.
+            // amend the args argument to match that of your emulator settings.
             "windows": {
-                "command": "C:/Code/b2/build/win64.vs2019/src/b2/RelWithDebInfo/B2.exe",
+                "command": "C:/Code/b2/B2.exe",
                 "args": [
                     "-0",
-                    "Androidz-Redux.ssd",
+                    "AndroidzRedux.ssd",
                     "-b"
                 ]
             },
