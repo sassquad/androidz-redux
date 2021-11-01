@@ -1,6 +1,6 @@
-10REM Androidz - Listing 3
+10REM Androidz - Verdict Report
 20REM By Stephen Scott
-30REM August 1993 - November 2020
+30REM August 1993 - November 2021
 50:
 60sc=VAL($&900)
 70PROCverdict

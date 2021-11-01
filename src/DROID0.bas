@@ -1,6 +1,6 @@
 10REM Androidz - Instructions
 20REM By Stephen Scott
-30REM August 1993 - August 2021
+30REM August 1993 - November 2021
 40*FX229,1
 50MODE7:VDU23,1,0;0;0;0;
 60*L. DRSCRN

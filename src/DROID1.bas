@@ -1,6 +1,6 @@
    10REM Androidz - Level and character data
    20REM By Stephen Scott
-   30REM August 1993 - January 2021
+   30REM August 1993 - November 2021
    40IFPAGE<>&1100 THEN PAGE=&1100:CHAIN"DROID1"
    50HIMEM=&2763:PROCleveldata:PROCchardata:CLS:PRINT'"Now, get ready!":CHAIN"DROID2":END
    60:
@@ -13,7 +13,7 @@
   130:
   140DEFPROCchardata
   150RESTORE 460
-  160J%=&27DD:l%=1:REPEAT:READa%:?J%=a%:J%=J%+1:l%=l%+1:UNTILl%=960
+  160J%=&27DD:l%=1:REPEAT:READa%:?J%=a%:J%=J%+1:l%=l%+1:UNTILl%=961
   170ENDPROC
   180:
   190DATA /...ISZfzMA...OA```O8/.IL8...L8/.ILA```OA...OSZfzM/...I
